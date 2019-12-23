@@ -5,29 +5,13 @@ import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from './src/screens/HomeScreen';
 import List from './src/screens/List';
 import ImageScreen from './src/screens/ImageScreen';
+import CounterScreen from './src/screens/CounterScreen';
+import ColorScreen from './src/screens/ColorScreen';
 
 class DetailsScreen extends React.Component {
   render() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Details Screen</Text>
-        <Button
-          title="Go to Details... again"
-          onPress={() => this.props.navigation.push('List')}
-        />
-        <Button
-          title="Go to Home"
-          onPress={() => this.props.navigation.navigate('Home')}
-        />
-        <Button
-          title="Go back"
-          onPress={() => this.props.navigation.goBack()}
-        />
-        <Button
-          title="Go back"
-          onPress={() => this.props.navigation.navigate('ImageScreen')}
-        />
-      </View>
+    <View>App.js</View>
     );
   }
 }
@@ -36,6 +20,8 @@ const RootStack = createStackNavigator({
   Home: HomeScreen,
   List: List,
   ImageScreen: ImageScreen,
+  Counter: CounterScreen,
+  AddColor: ColorScreen,
 });
 
 export default createAppContainer(RootStack);

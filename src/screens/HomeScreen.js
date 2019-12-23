@@ -33,7 +33,12 @@ export default class HomeScreen extends React.Component {
                 <Separator />
                 <Button
                     title="Counter"
-                    onPress={() => this.props.navigation.navigate('ImageScreen')}
+                    onPress={() => this.props.navigation.navigate('Counter')}
+                />
+                <Separator />
+                <Button
+                    title="Add Color"
+                    onPress={() => this.props.navigation.navigate('AddColor')}
                 />
             </View>
         );
