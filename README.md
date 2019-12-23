@@ -1,2 +1,2 @@
 # AwesomeProject-react-native
-Just react native exploration!
+Just a react native exploration!
