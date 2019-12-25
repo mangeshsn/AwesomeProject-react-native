@@ -7,6 +7,7 @@ import List from './src/screens/List';
 import ImageScreen from './src/screens/ImageScreen';
 import CounterScreen from './src/screens/CounterScreen';
 import ColorScreen from './src/screens/ColorScreen';
+import SquareScreen from './src/screens/SquareScreen';
 
 class DetailsScreen extends React.Component {
   render() {
@@ -22,6 +23,7 @@ const RootStack = createStackNavigator({
   ImageScreen: ImageScreen,
   Counter: CounterScreen,
   AddColor: ColorScreen,
+  SquareScreen: SquareScreen,
 });
 
 export default createAppContainer(RootStack);

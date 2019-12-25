@@ -40,6 +40,12 @@ export default class HomeScreen extends React.Component {
                     title="Add Color"
                     onPress={() => this.props.navigation.navigate('AddColor')}
                 />
+                <Separator />
+                <Button
+                    title="Square Screen"
+                    onPress={() => this.props.navigation.navigate('SquareScreen')}
+                />
+
             </View>
         );
     }
