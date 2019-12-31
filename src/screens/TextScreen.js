@@ -20,6 +20,11 @@ export default class TextScreen extends React.Component {
           onChangeText={newValue => this.setState({name: newValue})}
         />
         <Text>Whatever you type appears here: {this.state.name}</Text>
+        {this.state.name < 4 ? (
+          <Text>Name must be atleast 4 chars!</Text>
+        ) : (
+          <Text>cheers!</Text>
+        )}
       </View>
     );
   }
