@@ -45,6 +45,11 @@ export default class HomeScreen extends React.Component {
           title="Square Screen"
           onPress={() => this.props.navigation.navigate('SquareScreen')}
         />
+        <Separator />
+        <Button
+          title="Text Screen"
+          onPress={() => this.props.navigation.navigate('TextScreen')}
+        />
       </View>
     );
   }
