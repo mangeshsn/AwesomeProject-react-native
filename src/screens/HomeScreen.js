@@ -55,6 +55,11 @@ export default class HomeScreen extends React.Component {
           title="Box Screen"
           onPress={() => this.props.navigation.navigate('BoxScreen')}
         />
+        <Separator />
+        <Button
+          title="Box Screen"
+          onPress={() => this.props.navigation.navigate('Grid')}
+        />
       </View>
     );
   }

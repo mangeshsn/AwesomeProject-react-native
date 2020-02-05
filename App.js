@@ -10,6 +10,7 @@ import ColorScreen from './src/screens/ColorScreen';
 import SquareScreen from './src/screens/SquareScreen';
 import TextScreen from './src/screens/TextScreen';
 import BoxScreen from './src/screens/BoxScreen';
+import GridMenu from './src/screens/GridMenu';
 
 class DetailsScreen extends React.Component {
   render() {
@@ -26,6 +27,7 @@ const RootStack = createStackNavigator({
   SquareScreen: SquareScreen,
   TextScreen: TextScreen,
   BoxScreen: BoxScreen,
+  Grid: GridMenu,
 });
 
 export default createAppContainer(RootStack);
